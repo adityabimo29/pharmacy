@@ -1,0 +1,6 @@
+
+download
+http://www.maleck.org/imageuploader/img/hide.png
+https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+
+http://www.maleck.org/imageuploader/plugininfo.js

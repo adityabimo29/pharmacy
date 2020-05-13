@@ -1,0 +1,45 @@
+.wp-pagenavi {
+    width: 100%;
+    /* clear: both; */
+    font-size: initial;
+    padding: 5px 0;
+    text-align: center;
+    margin: 5px auto 80px auto;
+    line-height: 45px;
+    float:  left;
+}
+.pages {
+    color: #000;
+    width: auto;
+    height: auto;
+    margin: 0 3px;
+    border: 1px solid #e9e9e9;
+    padding: 8px;
+    background-color: #FFF;
+}
+.current-pag {
+    color: #333;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 1px solid #e9e9e9;
+    padding: 8px;
+    margin-right: 3px;
+}
+.current-pag {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.wp-pagenavi a:hover {
+    border: 1px solid #e9e9e9;
+    color: #FFF;
+    background-color: #000000;
+}
+.wp-pagenavi a {
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #e9e9e9;
+    padding: 8px;
+    background-color: #FFF;
+    margin: 5px 0;
+}

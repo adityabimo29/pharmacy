@@ -1,0 +1,139 @@
+RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^login$ login.php [L]
+
+RewriteRule ^home$ media.php?module=home [L]
+
+RewriteRule ^page$ media.php?module=page&act=list [L]
+#RewriteRule ^page-tambah$ media.php?module=page&act=add&id=1 [L]
+RewriteRule ^page-edit-([0-9]+)$ media.php?module=page&act=edit&id=$1 [L]
+
+RewriteRule ^lap-pembelian$ media.php?module=lap-pembelian&act=list [L]
+RewriteRule ^lap-penjualan$ media.php?module=lap-penjualan&act=list [L]
+RewriteRule ^lap-stok$ media.php?module=lap-stok&act=list [L]
+RewriteRule ^backup$ media.php?module=backup&act=import [L]
+
+RewriteRule ^laporan-apoteker$ media.php?module=laporanApoteker&act=laporan-apoteker [L]
+RewriteRule ^laporan-stok$ media.php?module=laporanStok&act=laporan-stok [L]
+
+RewriteRule ^distributor$ media.php?module=distributor&act=list [L]
+RewriteRule ^distributor-add$ media.php?module=distributor&act=add [L]
+RewriteRule ^distributor-import$ media.php?module=distributor&act=import [L]
+RewriteRule ^distributor-template$ media.php?module=distributor&act=template [L]
+RewriteRule ^distributor-edit-([0-9]+)$ media.php?module=distributor&act=edit&id=$1 [L]
+
+RewriteRule ^obat$ media.php?module=obat&act=list [L]
+RewriteRule ^obat-add$ media.php?module=obat&act=add [L]
+RewriteRule ^obat-edit-([0-9]+)$ media.php?module=obat&act=edit&id=$1 [L]
+RewriteRule ^obat-import$ media.php?module=obat&act=import [L]
+
+
+RewriteRule ^pembelian$ media.php?module=pembelian&act=list [L]
+RewriteRule ^pembelian-add-(.*)$ media.php?module=pembelian&act=add&kd=$1 [L]
+RewriteRule ^pembelian-print$ media.php?module=pembelian&act=print [L]
+RewriteRule ^pembelian-edit-([0-9]+)$ media.php?module=pembelian&act=editBarang&kd=$1 [L]
+RewriteRule ^pembelian-hapus-([0-9]+)$ media.php?module=pembelian&act=hapusBarang&kd=$1 [L]
+#RewriteRule ^pembelian-add$ media.php?module=pembelian&act=add [L]
+RewriteRule ^pembelian-import$ media.php?module=pembelian&act=import [L]
+#RewriteRule ^pembelian-edit-([0-9]+)$ media.php?module=pembelian&act=edit&id=$1 [L]
+
+RewriteRule ^penjualan$ media.php?module=penjualan&act=list [L]
+RewriteRule ^penjualan-add$ media.php?module=penjualan&act=add [L]
+RewriteRule ^penjualan-edit-([0-9]+)$ media.php?module=penjualan&act=editBarang&kd=$1 [L]
+RewriteRule ^penjualan-hapus-([0-9]+)$ media.php?module=penjualan&act=hapusBarang&kd=$1 [L]
+#RewriteRule ^penjualan-add$ media.php?module=penjualan&act=add [L]
+RewriteRule ^penjualan-import$ media.php?module=penjualan&act=import [L]
+RewriteRule ^penjualan-print$ mediara.php?module=penjualan&act=print [L]
+#RewriteRule ^penjualan-edit-([0-9]+)$ media.php?module=penjualan&act=edit&id=$1 [L]
+
+RewriteRule ^cek-stok$ media.php?module=cek-stok&act=list [L]
+RewriteRule ^cek-stok-add-(.*)$ media.php?module=cek-stok&act=add&kd=$1 [L]
+RewriteRule ^cek-stok-edit-([0-9]+)$ media.php?module=cek-stok&act=editBarang&kd=$1 [L]
+RewriteRule ^cek-stok-hapus-([0-9]+)$ media.php?module=cek-stok&act=hapusBarang&kd=$1 [L]
+#RewriteRule ^cek-stok-add$ media.php?module=cek-stok&act=add [L]
+RewriteRule ^cek-stok-import$ media.php?module=cek-stok&act=import [L]
+#RewriteRule ^cek-stok-edit-([0-9]+)$ media.php?module=cek-stok&act=edit&id=$1 [L]
+
+RewriteRule ^penjualan$ media.php?module=penjualan&act=list [L]
+RewriteRule ^penjualan-add$ media.php?module=penjualan&act=add [L]
+RewriteRule ^penjualan-import$ media.php?module=penjualan&act=import [L]
+RewriteRule ^penjualan-edit-([0-9]+)$ media.php?module=penjualan&act=edit&id=$1 [L]
+
+RewriteRule ^artikel$ media.php?module=artikel&act=list [L]
+RewriteRule ^artikel-add$ media.php?module=artikel&act=add [L]
+RewriteRule ^artikel-edit-([0-9]+)$ media.php?module=artikel&act=edit&id=$1 [L]
+
+RewriteRule ^about$ media.php?module=about&act=list [L]
+RewriteRule ^about-add$ media.php?module=about&act=add [L]
+RewriteRule ^about-edit-([0-9]+)$ media.php?module=about&act=edit&id=$1 [L]
+
+RewriteRule ^keunggulan$ media.php?module=keunggulan&act=list [L]
+RewriteRule ^keunggulan-add$ media.php?module=keunggulan&act=add [L]
+RewriteRule ^keunggulan-edit-([0-9]+)$ media.php?module=keunggulan&act=edit&id=$1 [L]
+
+RewriteRule ^testimoni$ media.php?module=testimoni&act=list [L]
+RewriteRule ^testimoni-add$ media.php?module=testimoni&act=add [L]
+RewriteRule ^testimoni-edit-([0-9]+)$ media.php?module=testimoni&act=edit&id=$1 [L]
+
+
+RewriteRule ^kategori$ media.php?module=kategori&act=list [L]
+RewriteRule ^kategori-add$ media.php?module=kategori&act=add [L]
+RewriteRule ^kategori-edit-([0-9]+)$ media.php?module=kategori&act=edit&id=$1 [L]
+
+RewriteRule ^subkategori$ media.php?module=subkategori&act=list [L]
+RewriteRule ^subkategori-add$ media.php?module=subkategori&act=add [L]
+RewriteRule ^subkategori-edit-([0-9]+)$ media.php?module=subkategori&act=edit&id=$1 [L]
+
+RewriteRule ^produk$ media.php?module=produk&act=list [L]
+RewriteRule ^produk-add$ media.php?module=produk&act=add [L]
+RewriteRule ^produk-edit-([0-9]+)$ media.php?module=produk&act=edit&id=$1&tab=edit [L]
+RewriteRule ^produk-edit-([0-9]+)-tab-(.*)$ media.php?module=produk&act=edit&id=$1&tab=$2 [L]
+RewriteRule ^produk-addgallery-([0-9]+)$ media.php?module=produk&act=addgallery&id=$1 [L]
+RewriteRule ^produk-editgallery-([0-9]+)$ media.php?module=produk&act=editgallery&id=$1 [L]
+
+
+RewriteRule ^sosmed$ media.php?module=sosmed&act=list [L]
+RewriteRule ^sosmed-add$ media.php?module=sosmed&act=add [L]
+RewriteRule ^sosmed-edit-([0-9]+)$ media.php?module=sosmed&act=edit&id=$1 [L]
+
+
+RewriteRule ^contact$ media.php?module=contact&act=list [L]
+RewriteRule ^contact-edit-([0-9]+)$ media.php?module=contact&act=edit&id=$1 [L]
+
+
+RewriteRule ^statistik$ media.php?module=statistik&act=list [L]
+RewriteRule ^statistik-list$ media.php?module=statistik&act=list [L]
+RewriteRule ^statistik-bar$ media.php?module=statistik&act=bar [L]
+
+RewriteRule ^slider$ media.php?module=slider&act=list [L]
+RewriteRule ^slider-add$ media.php?module=slider&act=add [L]
+RewriteRule ^slider-edit-([0-9]+)$ media.php?module=slider&act=edit&id=$1 [L]
+
+RewriteRule ^banner$ media.php?module=banner&act=list [L]
+RewriteRule ^banner-add$ media.php?module=banner&act=add [L]
+RewriteRule ^banner-edit-([0-9]+)$ media.php?module=banner&act=edit&id=$1 [L]
+
+
+RewriteRule ^module$ media.php?module=module&act=list [L]
+RewriteRule ^module-edit-([0-9]+)$ media.php?module=module&act=edit&id=$1 [L]
+
+
+RewriteRule ^limit-([0-9]+)-(.*)$ media.php?module=setting&set=limit&ll=$1&page=$2 [L]
+RewriteRule ^sort-(.*)-(.*)$ media.php?module=setting&set=sort&ll=$1&page=$2 [L]
+RewriteRule ^sorts-(.*)-(.*)-(.*)$ media.php?module=setting3&set=sort&ll=$1&page=$2&act=$3 [L]
+RewriteRule ^periode-(.*)-(.*)-(.*)$ media.php?module=setting3&set=periode&ll=$1&page=$2&act=$3 [L]
+RewriteRule ^setting2$ media.php?module=setting2 [L]
+
+
+RewriteRule ^admin$ media.php?module=admin&act=list [L]
+RewriteRule ^admin-tambah$ media.php?module=admin&act=add [L]
+RewriteRule ^admin-edit-([0-9]+)$ media.php?module=admin&act=edit&id=$1 [L]
+RewriteRule ^admin-view-([0-9]+)$ media.php?module=admin&act=view&id=$1 [L]
+
+RewriteRule ^adminz$ ckeditor/plugins/imageuploader/responsive.php [L]
+
+
+RewriteRule ^error$ media.php?module=error [L]
+RewriteRule ^404$ media.php?module=404 [L]

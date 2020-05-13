@@ -1,0 +1,32 @@
+RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^home$ template.php?module=home&id=0 [L]
+
+RewriteRule ^produk$ template.php?module=produk&id=1 [L]
+RewriteRule ^produk-page-([0-9]+)$ template.php?module=produk&id=1&page=$1 [L]
+RewriteRule ^produk/(.*)-([0-9]+)$ template_sub.php?module=detproduk&id=$2 [L]
+
+RewriteRule ^tentang-kami$ template.php?module=detpage&id=2 [L]
+RewriteRule ^reseller$ template.php?module=detpage&id=3 [L]
+RewriteRule ^cara-pembayaran$ template.php?module=detpage&id=5 [L]
+
+RewriteRule ^artikel$ template.php?module=artikel&id=4 [L]
+RewriteRule ^artikel-page-([0-9]+)$ template.php?module=artikel&id=4&page=$1 [L]
+RewriteRule ^artikel/(.*)-([0-9]+)$ template_sub.php?module=detartikel&id=$2 [L]
+
+
+
+RewriteRule ^kategori/(.*)-([0-9]+)-page-([0-9]+)$ template_sub.php?module=kategori&seo=$1&id=$2&page=$3 [L]
+RewriteRule ^kategori/(.*)-([0-9]+)$ template_sub.php?module=kategori&seo=$1&id=$2 [L]
+RewriteRule ^subkategori/(.*)-([0-9]+)-page-([0-9]+)$ template_sub.php?module=subkategori&seo=$1&id=$2&page=$3 [L]
+RewriteRule ^subkategori/(.*)-([0-9]+)$ template_sub.php?module=subkategori&seo=$1&id=$2 [L]
+
+
+
+RewriteRule ^jumlah$ template.php?module=jumlah [L]
+RewriteRule ^save-contact$ template.php?module=save-contact [L]
+RewriteRule ^pencarian$ template.php?module=pencarian [L]
+RewriteRule ^search$ template.php?module=search [L]
+RewriteRule ^search-page-([0-9]+)$ template.php?module=search&page=$1 [L]

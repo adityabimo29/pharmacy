@@ -1,0 +1,217 @@
+/*
+.custom-logo {
+	width: 250px;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@font-face {
+    font-family: 'bella_fashion_personal_useRg';
+    src: url('../fonts/bella-webfont.woff2') format('woff2'),
+         url('../fonts/bella-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	
+    font-family: 'Bella';  
+    src: url(../fonts/bella.ttf);  
+    font-weight: normal;  
+}
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login div#login h1 a {}
+
+.testimonial-heading {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.testimonial-content p {
+	font-size: 16px;
+}
+.container-consult {
+	display: flex;
+	justify-content: center;
+}
+
+.slogan {
+	text-align: center;
+	font-size:2em;
+	font-family: 'bella_fashion_personal_useRg', 'Source Sans Pro', sans-serif;
+	color: #C69930;
+}
+
+.slogan-subtitle {
+	width: 66.67%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.heading-reason {
+	
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+.button-consult {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.woocommerce-info p {
+		margin-bottom:0;
+	margin-top:0;
+}
+
+.woocommerce-info p a {
+	color:#f6a225;
+	font-weight: bold;
+}
+
+.woocommerce-info p a:hover {
+	text-decoration: underline;
+}
+
+.pt-cv-readmore {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+}
+
+#back-to-top {
+	right: 20px;
+	right: 20px;
+}
+
+.pt-cv-thumbnail {
+	width: 75px;
+	display: block;
+	margin: 0 auto;
+}
+
+.pt-cv-title {
+	max-width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.entry-meta, .cat-links, .navigation.post-navigation { 
+	display: none; 
+}
+
+.single .page-header .page-title {
+    margin-bottom: 20px;
+}
+
+/*header*/
+.buttom-header {
+	padding-top: 10px;
+}
+
+.internal-link {
+	color: #C69930;
+}
+.internal-link:hover {
+	text-decoration: underline;
+}
+.reseller-title {
+	font-size: 1.714em;
+}
+
+.marked-link {
+	font-weight:bold;
+}
+.marked-link:hover {
+	text-decoration: underline;
+}
+#cta-section .cta-content h2 {
+    color: #241f59;
+		font-size: 20px;
+    font-family: 'Bella';
+		font-weight: bold;
+}
+
+#cta-section .cta-content p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login h3 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 20px 0; 
+} 
+
+.login h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.products .product .price {
+	display:none !important;
+}
+
+.orderby option[value="price"], .orderby option[value="price-desc"]{
+   display: none;
+}
+
+.woocommerce-order-received .wc-bacs-bank-details-heading {
+    display: none;
+}
+
+.row-total:nth-last-child(2) {
+	color:#fff;
+	background:#C69930;
+}
+
+.row-notice-transfer {
+	color:red;
+	text-align:center;
+}
+
+.button, .bttn a, #cta-section .cta-content a, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .added_to_cart, .edit-link a, .woocommerce-cart table.cart input {
+	background: #972853;
+	border-color:#fff;
+	color:#fff;
+}
+
+.button:hover, #cta-section .cta-content a:hover, .bttn a:hover, .widget ul li a.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .widget ul li a.added_to_cart:hover, .edit-link a:hover, .woocommerce a.added_to_cart:hover, button:hover {
+	border-color: #241F59
+}
+
+.button:before, #cta-section .cta-content a:before, .bttn a:before, .woocommerce #respond input#submit.alt:before, .woocommerce a.button.alt:before, .woocommerce button.button.alt:before, .woocommerce input.button.alt:before, .woocommerce a.button:before, .woocommerce button.button:before, .added_to_cart:before, .edit-link a:before, button:before, button:after {
+	background: #241F59;
+}
+
+.button:visited {
+	color: #fff;
+}
+
+.woocommerce-result-count, .woocommerce-ordering {
+	display:none;
+}
+
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    width: 100%;
+}
+
+.form-group {
+  	position: relative;
+}
+
+.form-group #password { 
+	text-indent: 32px;
+}
+.form-group .fa { 
+  	position: absolute;
+  	top: 33px;
+  	left: 10px;
+	font-size: 16px;
+}
